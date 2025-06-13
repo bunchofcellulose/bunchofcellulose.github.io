@@ -5,9 +5,13 @@ description: "My projects and contributions."
 
 Here are some of the notable projects and contributions that I have made so far.
 
+## Research
+
+I participated in CERN's Beamline for Schools 2025 competition, where I worked on a proposal for the investigation of radiation effects from cosmic particles on space-based electronics.
+
 ## Celestial Sphere
 
-Celestial Sphere is a web application that provides a neat and user-friendly interface for drawing and visualizing diagrams on a sphere. This provides a tool for students and educators to easily learn and engage with spherical diagrams, which are commonly used in spherical astronomy.
+[Celestial Sphere](https://bunchofcellulose.github.io/celestialsphere/) is a web application that provides a neat and user-friendly interface for drawing and visualizing diagrams on a sphere. This provides a tool for students and educators to easily learn and engage with spherical diagrams, which are commonly used in spherical astronomy.
 
 ![Celestial Sphere application screenshot](celsphere.png "A confusing diagram in Roy and Clarke's book, which is made clearer with Celestial Sphere.")
 
