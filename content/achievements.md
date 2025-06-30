@@ -18,7 +18,7 @@ Here are some of the notable achievements and distinctions that I have accomplis
 
 {{< timelineItem icon="star" header="Junior Year" badge="2024-25" >}}
 <ul>
-    <li>97.0% in Grade 11 final examinations; Place 1st in my school</li>
+    <li>97.0% in Grade 11 final examinations; Placed 1st in my school</li>
     <li>International Rank 11 in ISI LIMIT 2025; qualified for the 5-day online camp</li>
     <li>Silver Medal, NAC 2025</li>
     <li>All India Rank under 20 in INAO 2025; qualified for Astronomy OCSC 2025</li>
@@ -45,14 +45,15 @@ Here are some of the notable achievements and distinctions that I have accomplis
 
 The following abbreviations have been used:
 
-- **NSEA**: National Standard Examination in Astronomy
-- **INAO**: Indian National Astronomy Olympiad
-- **OCSC**: Orientation-cum-Selection Camp for International Olympiads
+- **NSEA**: National Standard Examination in Astronomy (The first stage of the Indian National Astronomy Olympiad)
+- **INAO**: Indian National Astronomy Olympiad (The second stage of the Indian National Astronomy Olympiad)
+- **OCSC**: Orientation-cum-Selection Camp for International Olympiads (The final stage of the Indian National Astronomy Olympiad)
 - **IOAA**: International Olympiad on Astronomy and Astrophysics
-- **IOQM**: Indian Olympiad Qualifier in Mathematics
-- **RMO**: Regional Mathematics Olympiad
-- **PLO**: Panini Linguistics Olympiad
-- **NAC**: USA National Astronomy Competition
+- **IOQM**: Indian Olympiad Qualifier in Mathematics (The first stage of the Indian National Mathematics Olympiad)
+- **RMO**: Regional Mathematics Olympiad (The second stage of the Indian National Mathematics Olympiad)
+- **PLO**: Panini Linguistics Olympiad (The national level Linguistics Olympiad in India)
+- **ISI LIMIT**: Indian Statistical Institute's Mathematics Test
+- **NAC**: USA National Astronomy Competition (The national level Astronomy competition in the USA)
 - **USAAAO**: USA Astronomy and Astrophysics Olympiad
 
 ## Other Achievements
