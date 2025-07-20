@@ -11,6 +11,7 @@ Here are some of the notable achievements and distinctions that I have accomplis
 
 {{< timelineItem icon="star" header="Senior Year" badge="2025-26" >}}
 <ul>
+    <li>Team shortlisted amongst the top 50 teams in CERN's Beamline for Schools (BL4S) competition 2024</li>
     <li>Selected into the Indian Team for the International Astronomy and Astrophysics Olympiad (IOAA) 2025</li>
     <li>Awarded the Best solution to a challenging problem award in both Theory and Data Analysis in the Astronomy OCSC 2025</li>
 </ul>
