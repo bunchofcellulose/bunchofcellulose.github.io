@@ -1,6 +1,7 @@
 ---
 title: Achievements
 description: "My achievements and milestones."
+weight: 2
 ---
 
 Here are some of the notable achievements and distinctions that I have accomplished so far.
@@ -78,5 +79,5 @@ Other than the above, I have also achieved the following:
 |-----------------------------------|------|--------------------|
 | CBSE Grade 10 Board Examination   | 2024 | 98.0%              |
 | CBSE Grade 11 Final Examination   | 2025 | 97.0%              |
-| Nov SAT                           | 2025 | 730 EBRW, 790 Math |
-| Oct SAT                           | 2025 | 680 EBRW, 800 Math |
+| November SAT                      | 2025 | 730 EBRW, 790 Math |
+| October SAT                       | 2025 | 680 EBRW, 800 Math |

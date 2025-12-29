@@ -1,6 +1,7 @@
 ---
 title: Projects
 description: "My projects and contributions."
+weight: 3
 ---
 
 Here are some of the notable projects and contributions that I have made so far.

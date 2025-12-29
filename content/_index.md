@@ -1,6 +1,7 @@
 ---
 title: "Hello!"
 description: "Just another personal site."
+weight: 1
 cascade:
     showDate: false
     showAuthor: false

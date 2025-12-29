@@ -1,6 +1,7 @@
 ---
 title: Resources
 description: "A collection of resources and links that I find useful."
+weight: 4
 ---
 
 Here are some of the resources and links that I find useful, and some of my own recommendations.
@@ -19,9 +20,8 @@ An archive of astronomy related questions from the National Standard Examination
 <a href="../assets/NSEA.pdf">Archive</a>
 {{< /timelineItem >}}
 
-{{< timelineItem icon="list" header="Books I have read" badge="Books">}}
+{{< timelineItem icon="location-dot" header="Physics books I have read" badge="Books">}}
 
-<h3>Physics</h3>
 <ul>
 <li>Concepts of Physics by H.C. Verma</li>
 <li>Physics by Resnick, Halliday, and Krane</li>
@@ -35,7 +35,10 @@ An archive of astronomy related questions from the National Standard Examination
 <li>A First Course in General Relativity by B. Schutz</li>
 </ul>
 
-<h3>Astronomy</h3>
+{{< /timelineItem >}}
+
+{{< timelineItem icon="location-dot" header="Astronomy books I have read" badge="Books">}}
+
 <ul>
 <li>Foundations of Astrophysics by B. Ryden and B. M. Peterson</li>
 <li>An Introduction to Modern Astrophysics by D. J. Carroll and D. A. Ostlie</li>
@@ -47,7 +50,10 @@ An archive of astronomy related questions from the National Standard Examination
 <li>Schaum's Outline of Astronomy by S. E. Palen</li>
 </ul>
 
-<h3>Others</h3>
+{{< /timelineItem >}}
+
+{{< timelineItem icon="location-dot" header="Other academic books I have read" badge="Books">}}
+
 <ul>
 <li>Modern Olympiad Number Theory by Aditya Khurmi</li>
 <li>Proofs by J. Cummings</li>

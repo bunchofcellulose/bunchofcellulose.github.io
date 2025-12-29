@@ -2,6 +2,8 @@
 title: "INAO Exam Analysis (2014-2025)"
 description: "Topic-wise and Year-wise Analysis of Past INAO (Indian National Astronomy Olympiad) Exams"
 date: 2024-01-01
+prev: N
+next: N
 ---
 
 ## Topic Distribution by Year
