@@ -7,7 +7,13 @@ Here are some of the notable projects and contributions that I have made so far.
 
 ## Research
 
-I participated in CERN's Beamline for Schools 2025 competition, where I worked on a proposal for the investigation of radiation effects from cosmic particles on space-based electronics.
+I participated in CERN's Beamline for Schools 2025 competition, where I worked on a proposal for the investigation of radiation effects from cosmic particles on space-based electronics. [Paper](../assets/bl4s.pdf)
+
+I carried out independent research on the shifts in position and number of Lagrange points in the N+1 body problem under Yukawa-type potentials. [Paper](../assets/N_1_maxwell_ring.pdf)
+
+## AO Guide
+
+[AO Guide](https://aoguide.app) is the a free, online, and comprehensive guide to mastery of Astronomy Olympiads. It provides students with a structured curriculum, practice problems, and resources to excel in Astronomy Olympiads.
 
 ## Celestial Sphere
 

@@ -5,36 +5,57 @@ description: "A collection of resources and links that I find useful."
 
 Here are some of the resources and links that I find useful, and some of my own recommendations.
 
-## Books I have read so far in High School
+{{< timeline >}}
 
-### Physics
+{{< timelineItem icon="location-dot" header="INAO Exam Analysis (2014-2025)" badge="Astronomy">}}
+Indian National Astronomy Olympiad (INAO) exam analysis, with topic-wise and year-wise breakdown of questions from 2014 to 2025. Explore trends and insights in astronomy education.
 
-- Concepts of Physics by H.C. Verma
-- Physics by Resnick, Halliday, and Krane
-- Competitive Physics by J. Wang and B. Ricardo
-- Thermal Physics by S. J. Blundell and K. M. Blundell
-- An Introduction to Mechanics by D. Kleppner and R. Kolenkow
-- Introduction to Electrodynamics by D. J. Griffiths
-- The Feynman Lectures on Physics by R. P. Feynman, R. B. Leighton, and M. Sands
-- Celestial Mechanics by R. Fitzpatrick
-- Introduction to Elementary Particles by D. J. Griffiths
-- A First Course in General Relativity by B. Schutz
+<a href="../inao/">Read the full analysis</a>
+{{< /timelineItem >}}
 
-### Astronomy
+{{< timelineItem icon="location-dot" header="NSEA Astronomy Question Archive (2021-2025)" badge="Astronomy">}}
+An archive of astronomy related questions from the National Standard Examination in Astronomy (NSEA) from 2021 to 2025.
 
-- Foundations of Astrophysics by B. Ryden and B. M. Peterson
-- An Introduction to Modern Astrophysics by D. J. Carroll and D. A. Ostlie
-- Introduction to Cosmology by B. Ryden
-- Fundamentals of Astrodynamics by Flavio Salvati
-- Astronomy: Principles and Practice by A. E. Roy and D. Clarke
-- Fundamental Astronomy by H. Karttunen and et al.
-- Spherical Astronomy by W. M. Smart
-- Schaum's Outline of Astronomy by S. E. Palen
+<a href="../assets/NSEA.pdf">Archive</a>
+{{< /timelineItem >}}
 
-### Others
+{{< timelineItem icon="list" header="Books I have read" badge="Books">}}
 
-- Modern Olympiad Number Theory by Aditya Khurmi
-- Proofs by J. Cummings
-- Linguistics Olympiad Training Guide by V. A. Neacșu
-- Competitive Programmer’s Handbook by A. Laaksonen
-- Statistics and Analysis of Scientific Data by M. Bonamente
+<h3>Physics</h3>
+<ul>
+<li>Concepts of Physics by H.C. Verma</li>
+<li>Physics by Resnick, Halliday, and Krane</li>
+<li>Competitive Physics by J. Wang and B. Ricardo</li>
+<li>Thermal Physics by S. J. Blundell and K. M. Blundell</li>
+<li>An Introduction to Mechanics by D. Kleppner and R. Kolenkow</li>
+<li>Introduction to Electrodynamics by D. J. Griffiths</li>
+<li>The Feynman Lectures on Physics by R. P. Feynman, R. B. Leighton, and M. Sands</li>
+<li>Celestial Mechanics by R. Fitzpatrick</li>
+<li>Introduction to Elementary Particles by D. J. Griffiths</li>
+<li>A First Course in General Relativity by B. Schutz</li>
+</ul>
+
+<h3>Astronomy</h3>
+<ul>
+<li>Foundations of Astrophysics by B. Ryden and B. M. Peterson</li>
+<li>An Introduction to Modern Astrophysics by D. J. Carroll and D. A. Ostlie</li>
+<li>Introduction to Cosmology by B. Ryden</li>
+<li>Fundamentals of Astrodynamics by Flavio Salvati</li>
+<li>Astronomy: Principles and Practice by A. E. Roy and D. Clarke</li>
+<li>Fundamental Astronomy by H. Karttunen and et al.</li>
+<li>Spherical Astronomy by W. M. Smart</li>
+<li>Schaum's Outline of Astronomy by S. E. Palen</li>
+</ul>
+
+<h3>Others</h3>
+<ul>
+<li>Modern Olympiad Number Theory by Aditya Khurmi</li>
+<li>Proofs by J. Cummings</li>
+<li>Linguistics Olympiad Training Guide by V. A. Neacșu</li>
+<li>Competitive Programmer's Handbook by A. Laaksonen</li>
+<li>Statistics and Analysis of Scientific Data by M. Bonamente</li>
+</ul>
+
+{{< /timelineItem >}}
+
+{{< /timeline >}}
