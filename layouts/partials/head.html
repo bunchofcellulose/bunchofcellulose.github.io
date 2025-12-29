@@ -40,44 +40,59 @@
   {{ end }}
   {{ $assets.Add "css" (slice $cssScheme) }}
   {{ $cssMain := resources.Get "css/compiled/main.css" }}
+  {{ if $cssMain }}
   {{ $assets.Add "css" (slice $cssMain) }}
+  {{ end }}
   {{ $cssCustom := resources.Get "css/custom.css" }}
   {{ if $cssCustom }}
   {{ $assets.Add "css" (slice $cssCustom) }}
   {{ end }}
-  {{ $bundleCSS := $assets.Get "css" | resources.Concat "css/main.bundle.css" | resources.Minify | resources.Fingerprint
-  "sha512" }}
+  {{ $cssList := $assets.Get "css" }}
+  {{ if $cssList }}
+  {{ $bundleCSS := $cssList | resources.Concat "css/main.bundle.css" | resources.Minify | resources.Fingerprint "sha512" }}
   <link type="text/css" rel="stylesheet" href="{{ $bundleCSS.RelPermalink }}"
     integrity="{{ $bundleCSS.Data.Integrity }}" />
+  {{ end }}
   {{ $jsAppearance := resources.Get "js/appearance.js" }}
+  {{ if $jsAppearance }}
   {{ $jsAppearance = $jsAppearance | resources.ExecuteAsTemplate "js/appearance.js" . | resources.Minify | resources.Fingerprint "sha512" }}
   <script type="text/javascript" src="{{ $jsAppearance.RelPermalink }}"
     integrity="{{ $jsAppearance.Data.Integrity }}"></script>
+  {{ end }}
   {{ if .Site.Params.enableSearch | default false }}
   {{ $jsFuse := resources.Get "lib/fuse/fuse.min.js" }}
   {{ $jsSearch := resources.Get "js/search.js" }}
+  {{ if and $jsFuse $jsSearch }}
   {{ $assets.Add "js" (slice $jsFuse $jsSearch) }}
+  {{ end }}
   {{ end }}
   {{ if .Site.Params.enableCodeCopy | default false }}
   {{ $jsCode := resources.Get "js/code.js" }}
+  {{ if $jsCode }}
   {{ $assets.Add "js" (slice $jsCode) }}
+  {{ end }}
   {{ end }}
   {{ if .Site.Params.rtl | default false }}
   {{ $jsRTL := resources.Get "js/rtl.js" }}
+  {{ if $jsRTL }}
   {{ $assets.Add "js" (slice $jsRTL) }}
   {{ end }}
+  {{ end }}
   {{ $jsMobileMenu := resources.Get "js/mobilemenu.js" }}
+  {{ if $jsMobileMenu }}
   {{ $assets.Add "js" (slice $jsMobileMenu) }}
+  {{ end }}
   {{ if $assets.Get "js" }}
-  {{ $bundleJS := $assets.Get "js" | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint
-  "sha512" }}
+  {{ $bundleJS := $assets.Get "js" | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
   <script defer type="text/javascript" id="script-bundle" src="{{ $bundleJS.RelPermalink }}"
-    integrity="{{ $bundleJS.Data.Integrity }}" data-copy="{{ i18n "code.copy" }}" data-copied="{{ i18n "code.copied"
-    }}"></script>
+    integrity="{{ $bundleJS.Data.Integrity }}" data-copy="{{ i18n "code.copy" }}" data-copied="{{ i18n "code.copied" }}"></script>
   {{ end }}
   {{ if not .Site.Params.disableImageZoom | default true }}
-  {{ $zoomJS := resources.Get "lib/zoom/zoom.min.js" | resources.Fingerprint "sha512" }}
+  {{ $zoomJS := resources.Get "lib/zoom/zoom.min.js" }}
+  {{ if $zoomJS }}
+  {{ $zoomJS = $zoomJS | resources.Fingerprint "sha512" }}
   <script src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
+  {{ end }}
   {{ end }}
   {{/* Icons */}}
   {{ if templates.Exists "partials/favicons.html" }}
