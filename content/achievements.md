@@ -2,6 +2,8 @@
 title: Achievements
 description: "My achievements and milestones."
 weight: 2
+next: N
+prev: N
 ---
 
 Here are some of the notable achievements and distinctions that I have accomplished so far.

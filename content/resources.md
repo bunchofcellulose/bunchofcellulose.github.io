@@ -2,6 +2,8 @@
 title: Resources
 description: "A collection of resources and links that I find useful."
 weight: 4
+next: N
+prev: N
 ---
 
 Here are some of the resources and links that I find useful, and some of my own recommendations.
