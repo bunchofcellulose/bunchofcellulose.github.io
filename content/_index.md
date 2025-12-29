@@ -19,8 +19,6 @@ I enjoy reading books. My favourite book is the "The Stranger" by Albert Camus. 
 
 ## Where can I find you?
 
-If you want to contact me, you can either reach me out via email at [bunchofcellulose@gmail.com](mailto:bunchofcellulose@gmail.com),  [Linkedin](https://www.linkedin.com/in/iam-akshat-srivastava/), or [discord](https://discord.gg/bV8bxvTmzU).
-
-Join my [discord server](https://discord.gg/bV8bxvTmzU) for astronomy related discussions and resources!
+If you want to contact me, you can either reach me out via email at [bunchofcellulose@gmail.com](mailto:bunchofcellulose@gmail.com),  [Linkedin](https://www.linkedin.com/in/iam-akshat-srivastava/), or [discord](https://discord.gg/bV8bxvTmzU) (My username is `bunchofcells`).
 
 The site is uploaded on my [GitHub](https://github.com//bunchofcellulose).
