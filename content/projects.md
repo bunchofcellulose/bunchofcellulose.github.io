@@ -18,6 +18,10 @@ I carried out independent research on the shifts in position and number of Lagra
 
 [AO Guide](https://aoguide.app) is the a free, online, and comprehensive guide to mastery of Astronomy Olympiads. It provides students with a structured curriculum, practice problems, and resources to excel in Astronomy Olympiads.
 
+## OAC
+
+[OAC](https://onlineastro.org/) or the Online Astronomy Competition is an annual online competition for astronomy enthusiasts worldwide. It consists of two rounds, each having questions deemed harder than IOAA.
+
 ## Celestial Sphere
 
 [Celestial Sphere](https://bunchofcellulose.github.io/celestialsphere/) is a web application that provides a neat and user-friendly interface for drawing and visualizing diagrams on a sphere. This provides a tool for students and educators to easily learn and engage with spherical diagrams, which are commonly used in spherical astronomy.
