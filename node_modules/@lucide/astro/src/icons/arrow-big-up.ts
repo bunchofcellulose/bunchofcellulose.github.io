@@ -1,0 +1,18 @@
+
+import createLucideIcon from '../createLucideIcon';
+import type { AstroComponent } from '../types'
+
+/**
+ * @component @name ArrowBigUp
+ * @description Lucide SVG icon component, renders SVG Element with children.
+ *
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogIHdpZHRoPSIyNCIKICBoZWlnaHQ9IjI0IgogIHZpZXdCb3g9IjAgMCAyNCAyNCIKICBmaWxsPSJub25lIgogIHN0cm9rZT0iIzAwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICNmZmY7IGJvcmRlci1yYWRpdXM6IDJweCIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8cGF0aCBkPSJNOSAxM2ExIDEgMCAwIDAtMS0xSDUuMDYxYTEgMSAwIDAgMS0uNzUtMS44MTFsNi44MzYtNi44MzVhMS4yMDcgMS4yMDcgMCAwIDEgMS43MDcgMGw2LjgzNSA2LjgzNWExIDEgMCAwIDEtLjc1IDEuODExSDE2YTEgMSAwIDAgMC0xIDF2NmExIDEgMCAwIDEtMSAxaC00YTEgMSAwIDAgMS0xLTF6IiAvPgo8L3N2Zz4K) - https://lucide.dev/icons/arrow-big-up
+ * @see https://lucide.dev/guide/packages/lucide-astro - Documentation
+ *
+ * @param {import('../types').IconProps} props - Lucide icons props and any valid SVG attribute
+ * @returns {any} Astro Component
+ * 
+ */
+const ArrowBigUp = createLucideIcon('arrow-big-up', [["path",{"d":"M9 13a1 1 0 0 0-1-1H5.061a1 1 0 0 1-.75-1.811l6.836-6.835a1.207 1.207 0 0 1 1.707 0l6.835 6.835a1 1 0 0 1-.75 1.811H16a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z"}]]) as AstroComponent;
+
+export default ArrowBigUp;

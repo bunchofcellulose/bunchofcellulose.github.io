@@ -1,0 +1,18 @@
+
+import createLucideIcon from '../createLucideIcon';
+import type { AstroComponent } from '../types'
+
+/**
+ * @component @name CaseSensitive
+ * @description Lucide SVG icon component, renders SVG Element with children.
+ *
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogIHdpZHRoPSIyNCIKICBoZWlnaHQ9IjI0IgogIHZpZXdCb3g9IjAgMCAyNCAyNCIKICBmaWxsPSJub25lIgogIHN0cm9rZT0iIzAwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICNmZmY7IGJvcmRlci1yYWRpdXM6IDJweCIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8cGF0aCBkPSJtMiAxNiA0LjAzOS05LjY5YS41LjUgMCAwIDEgLjkyMyAwTDExIDE2IiAvPgogIDxwYXRoIGQ9Ik0yMiA5djciIC8+CiAgPHBhdGggZD0iTTMuMzA0IDEzaDYuMzkyIiAvPgogIDxjaXJjbGUgY3g9IjE4LjUiIGN5PSIxMi41IiByPSIzLjUiIC8+Cjwvc3ZnPgo=) - https://lucide.dev/icons/case-sensitive
+ * @see https://lucide.dev/guide/packages/lucide-astro - Documentation
+ *
+ * @param {import('../types').IconProps} props - Lucide icons props and any valid SVG attribute
+ * @returns {any} Astro Component
+ * 
+ */
+const CaseSensitive = createLucideIcon('case-sensitive', [["path",{"d":"m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16"}],["path",{"d":"M22 9v7"}],["path",{"d":"M3.304 13h6.392"}],["circle",{"cx":"18.5","cy":"12.5","r":"3.5"}]]) as AstroComponent;
+
+export default CaseSensitive;

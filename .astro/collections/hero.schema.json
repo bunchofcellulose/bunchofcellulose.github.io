@@ -1,0 +1,71 @@
+{
+  "$ref": "#/definitions/hero",
+  "definitions": {
+    "hero": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "githubUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "linkedinUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "twitterUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "blueskyUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "instagramUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "youtubeUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "codetipsUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "discordUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "title",
+        "description"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,10 @@
+
+import __ASTRO_IMAGE_IMPORT_Z1WzeEq from "../../assets/hero/pengu.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fhero%2Findex.yaml";
+import __ASTRO_IMAGE_IMPORT_2nV0nQ from "../../assets/blog/failure/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Ffailure.mdoc";
+import __ASTRO_IMAGE_IMPORT_Z2jco8a from "../../assets/blog/inao/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Finao.mdoc";
+import __ASTRO_IMAGE_IMPORT_Z1LpinJ from "../../assets/blog/the-day-of-early-action/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Fthe-day-of-early-action.mdoc";
+import __ASTRO_IMAGE_IMPORT_Z2e9w91 from "../../assets/projects/ao-guide/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fprojects%2Fao-guide.md";
+import __ASTRO_IMAGE_IMPORT_Z1VGsjW from "../../assets/projects/celestial-sphere/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fprojects%2Fcelestial-sphere.md";
+import __ASTRO_IMAGE_IMPORT_Z1junTn from "../../assets/projects/oac/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fprojects%2Foac.md";
+export default new Map([["../../assets/hero/pengu.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fhero%2Findex.yaml", __ASTRO_IMAGE_IMPORT_Z1WzeEq], ["../../assets/blog/failure/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Ffailure.mdoc", __ASTRO_IMAGE_IMPORT_2nV0nQ], ["../../assets/blog/inao/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Finao.mdoc", __ASTRO_IMAGE_IMPORT_Z2jco8a], ["../../assets/blog/the-day-of-early-action/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Fthe-day-of-early-action.mdoc", __ASTRO_IMAGE_IMPORT_Z1LpinJ], ["../../assets/projects/ao-guide/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fprojects%2Fao-guide.md", __ASTRO_IMAGE_IMPORT_Z2e9w91], ["../../assets/projects/celestial-sphere/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fprojects%2Fcelestial-sphere.md", __ASTRO_IMAGE_IMPORT_Z1VGsjW], ["../../assets/projects/oac/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fprojects%2Foac.md", __ASTRO_IMAGE_IMPORT_Z1junTn]]);
+		
