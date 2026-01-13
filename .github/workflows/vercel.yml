@@ -42,6 +42,13 @@ jobs:
     deploy-pages:
         needs: build
         runs-on: ubuntu-latest
+        
+        # Add this environment block
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
+          
         steps:
             - name: Deploy to GitHub Pages
+              id: deployment  # Add an ID to reference the URL output
               uses: actions/deploy-pages@v3

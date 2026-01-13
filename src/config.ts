@@ -105,10 +105,10 @@ export const siteConfig: SiteConfig = {
   },
   enableThemeSelector: true,
   extraLinks: {
-    enable: true,
+    enable: false,
     links: [
       {
-        link: "https://github.com/bunchofcellulose/",
+        link: "https://github.com/bunchofcellulose/bunchofcellulose.github.io",
         icon: CodeXml,
         label: "GitHub Repo",
       },
