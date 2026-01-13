@@ -3,8 +3,7 @@ title: AO Guide
 description: >-
   A free, online, and comprehensive guide to mastery of Astronomy Olympiads with structured content, practice problems, and community resources.
 image: '../../assets/projects/ao-guide/image.png'
-startDate: 2024-01-01
-endDate: 2026-01-11
+startDate: 2025-04-06
 skills:
   - Hugo
   - KaTeX

@@ -2,8 +2,8 @@
 title: Celestial Sphere
 description: >-
   An interactive web application for practicing and learning spherical geometry, designed for students and educators studying astronomy and spherical coordinates.
-startDate: 2023-01-01
-endDate: 2026-01-11
+startDate: 2025-05-11
+endDate: 2025-05-30
 image: '../../assets/projects/celestial-sphere/image.png'
 skills:
   - Rust

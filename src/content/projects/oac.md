@@ -3,8 +3,8 @@ title: OAC
 description: >-
   A free, international astronomy competition for high school students, featuring two rounds with multiple-choice and olympiad-style problems.
 image: '../../assets/projects/oac/image.png'
-startDate: 2025-09-21
-endDate: 2025-10-12
+startDate: 2025-07-28
+endDate: 2025-11-02
 skills:
   - Problem Curation
   - Olympiad Format

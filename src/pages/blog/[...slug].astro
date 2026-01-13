@@ -1,18 +1,22 @@
 ---
-import { getEntry, render } from "astro:content";
+import { getEntry, render, getCollection } from "astro:content";
 import BlogLayout from "../../layouts/BlogLayout.astro";
 
-// Get the slug from params and fetch the entry
-const { slug } = Astro.params;
+export const prerender = true;
 
-// Handle the slug (could be "welcome-post" or "guides/markdown-guide")
-const entry = await getEntry("blog", slug as string);
-
-// If entry doesn't exist, return 404
-if (!entry) {
-  return Astro.redirect("/404");
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
 }
 
+interface Props {
+  entry: any;
+}
+
+const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
 
