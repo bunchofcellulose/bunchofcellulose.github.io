@@ -1,0 +1,53 @@
+---
+const { title } = Astro.props;
+---
+
+<canvas id={title}></canvas>
+
+<script>
+  interface ChartConfig {
+    id: string;
+    type: string;
+    data: any;
+    options: any;
+  }
+
+  declare const Chart: any;
+
+  async function initChart(config: ChartConfig) {
+    // Load Chart.js from CDN
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js';
+    script.onload = () => {
+      const canvas = document.getElementById(config.id) as HTMLCanvasElement;
+      if (canvas && typeof Chart !== 'undefined') {
+        new Chart(canvas, {
+          type: config.type,
+          data: config.data,
+          options: config.options,
+        });
+      }
+    };
+    document.head.appendChild(script);
+  }
+
+  // Get chart config from data attribute
+  const canvases = document.querySelectorAll('[data-chart-config]');
+  canvases.forEach((canvas) => {
+    const configStr = canvas.getAttribute('data-chart-config');
+    if (configStr) {
+      try {
+        const config = JSON.parse(configStr);
+        initChart(config);
+      } catch (e) {
+        console.error('Failed to parse chart config:', e);
+      }
+    }
+  });
+</script>
+
+<style is:global>
+  canvas {
+    max-height: 400px;
+  }
+</style>

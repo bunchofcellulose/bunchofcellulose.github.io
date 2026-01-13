@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Projects from "../components/Projects.astro";
+import Blog from "../components/Blog.astro";
+import Contact from "../components/Contact.astro";
+import { getEntry } from "astro:content";
+import { siteConfig } from "../config";
+
+// Load Hero singleton
+const heroEntry = await getEntry("hero", "index");
+
+if (!heroEntry) {
+  throw new Error("Hero entry not found");
+}
+---
+
+<Layout
+  title="Pengu's Hub"
+  description={siteConfig.description}
+  currentPage="home"
+>
+  <main>
+    <!-- Hero Section (Always visible) -->
+    {heroEntry && <Hero hero={heroEntry.data} />}
+
+    <!-- About Section -->
+    <About />
+
+    <!-- Projects Section -->
+    {siteConfig.sections.projects && <Projects />}
+
+    <!-- Blog Section -->
+    {siteConfig.sections.blog && <Blog />}
+
+    <!-- Contact Section -->
+    {siteConfig.sections.contact && <Contact />}
+  </main>
+</Layout>

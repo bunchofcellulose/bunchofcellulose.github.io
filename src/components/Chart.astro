@@ -1,0 +1,92 @@
+---
+interface Props {
+  title?: string;
+  type: 'bar' | 'line' | 'pie' | 'doughnut';
+  labels: string;
+  datasets: string;
+  height?: string;
+  legend?: string;
+}
+
+const { 
+  title = '', 
+  type = 'bar',
+  labels = '[]',
+  datasets = '[]',
+  height = '400',
+  legend = 'true'
+} = Astro.props;
+
+const showLegend = legend !== 'false';
+
+let parsedLabels = [];
+let parsedDatasets = [];
+
+try {
+  parsedLabels = JSON.parse(labels);
+  parsedDatasets = JSON.parse(datasets);
+} catch (e) {
+  console.error('Failed to parse chart data:', e);
+}
+
+const chartId = `chart-${Math.random().toString(36).substr(2, 9)}`;
+---
+
+<div style={`height: ${height}px; position: relative;`}>
+  <canvas id={chartId}></canvas>
+</div>
+
+<script define:vars={{ chartId, type, parsedLabels, parsedDatasets, title, showLegend }}>
+  // Load Chart.js and initialize chart
+  (function() {
+    function initChart() {
+      const ctx = document.getElementById(chartId);
+      if (!ctx) return;
+      
+      const chartConfig = {
+        type: type,
+        data: {
+          labels: parsedLabels,
+          datasets: parsedDatasets,
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            title: {
+              display: title ? true : false,
+              text: title,
+            },
+            legend: {
+              display: showLegend,
+              position: 'top',
+            },
+          },
+          scales: (type !== 'pie' && type !== 'doughnut') ? {
+            x: {
+              stacked: true,
+            },
+            y: {
+              stacked: true,
+              beginAtZero: true,
+            },
+          } : undefined,
+        },
+      };
+      
+      if (window.Chart) {
+        new Chart(ctx, chartConfig);
+      }
+    }
+
+    // Load Chart.js from CDN if not already loaded
+    if (!window.Chart) {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js';
+      script.onload = initChart;
+      document.head.appendChild(script);
+    } else {
+      initChart();
+    }
+  })();
+</script>

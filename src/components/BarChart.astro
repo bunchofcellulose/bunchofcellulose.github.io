@@ -1,0 +1,189 @@
+---
+interface Props {
+  title?: string;
+  labels: string;
+  datasets: string;
+  height?: string;
+}
+
+const { 
+  title = '',
+  labels = '[]',
+  datasets = '[]',
+  height = '400'
+} = Astro.props;
+
+let parsedLabels = [];
+let parsedDatasets = [];
+
+try {
+  parsedLabels = JSON.parse(labels);
+  parsedDatasets = JSON.parse(datasets);
+} catch (e) {
+  console.error('Failed to parse chart data:', e);
+}
+
+// Calculate chart dimensions
+const chartHeight = parseInt(height);
+const chartWidth = 1200;
+const padding = { top: 50, right: 200, bottom: 80, left: 80 };
+const plotWidth = chartWidth - padding.left - padding.right;
+const plotHeight = chartHeight - padding.top - padding.bottom;
+
+// Find max value for scaling
+let maxValue = 0;
+parsedDatasets.forEach((dataset: any) => {
+  const max = Math.max(...dataset.data);
+  if (max > maxValue) maxValue = max;
+});
+maxValue = Math.ceil(maxValue * 1.2); // Add 20% padding
+
+// Color map
+const colors: { [key: string]: string } = {
+  '#3b82f6': '#3b82f6',
+  '#8b5cf6': '#8b5cf6',
+  '#ec4899': '#ec4899',
+  '#f59e0b': '#f59e0b',
+  '#10b981': '#10b981',
+  '#6366f1': '#6366f1',
+};
+
+// Generate bars
+const barWidth = plotWidth / parsedLabels.length;
+const bars: any[] = [];
+
+parsedLabels.forEach((label: string, labelIndex: number) => {
+  let yOffset = 0;
+  
+  parsedDatasets.forEach((dataset: any) => {
+    const value = dataset.data[labelIndex];
+    const barHeight = (value / maxValue) * plotHeight;
+    const x = padding.left + labelIndex * barWidth + barWidth / 2 - 35;
+    const y = padding.top + plotHeight - yOffset - barHeight;
+    
+    bars.push({
+      x,
+      y,
+      width: 70 / parsedDatasets.length,
+      height: barHeight,
+      fill: colors[dataset.backgroundColor] || dataset.backgroundColor,
+      label: dataset.label,
+      value: value,
+    });
+    
+    yOffset += barHeight;
+  });
+});
+
+// Generate grid lines
+const gridLines = [];
+const gridSteps = 5;
+for (let i = 0; i <= gridSteps; i++) {
+  const y = padding.top + (plotHeight / gridSteps) * (gridSteps - i);
+  const value = Math.round((maxValue / gridSteps) * i);
+  gridLines.push({ y, value });
+}
+---
+
+<svg 
+  viewBox={`0 0 ${chartWidth} ${chartHeight}`} 
+  xmlns="http://www.w3.org/2000/svg"
+  class="w-full border border-base-300 rounded bg-base-100"
+>
+  {title && (
+    <text 
+      x={chartWidth / 2} 
+      y="30" 
+      text-anchor="middle" 
+      font-size="16" 
+      font-weight="bold" 
+      fill="currentColor"
+    >
+      {title}
+    </text>
+  )}
+  
+  {gridLines.map((line) => (
+    <>
+      <line
+        x1={padding.left}
+        y1={line.y}
+        x2={chartWidth - padding.right}
+        y2={line.y}
+        stroke="currentColor"
+        stroke-width="1"
+        opacity="0.1"
+      />
+      <text
+        x={padding.left - 10}
+        y={line.y + 4}
+        text-anchor="end"
+        font-size="12"
+        fill="currentColor"
+        opacity="0.7"
+      >
+        {line.value}
+      </text>
+    </>
+  ))}
+  
+  <line
+    x1={padding.left}
+    y1={padding.top}
+    x2={padding.left}
+    y2={padding.top + plotHeight}
+    stroke="currentColor"
+    stroke-width="2"
+  />
+  <line
+    x1={padding.left}
+    y1={padding.top + plotHeight}
+    x2={chartWidth - padding.right}
+    y2={padding.top + plotHeight}
+    stroke="currentColor"
+    stroke-width="2"
+  />
+  
+  {bars.map((bar, idx) => (
+    <rect
+      x={bar.x}
+      y={bar.y}
+      width={bar.width}
+      height={bar.height}
+      fill={bar.fill}
+      opacity="0.9"
+    />
+  ))}
+  
+  {parsedLabels.map((label: string, idx: number) => (
+    <text
+      x={padding.left + idx * barWidth + barWidth / 2}
+      y={padding.top + plotHeight + 30}
+      text-anchor="middle"
+      font-size="12"
+      fill="currentColor"
+    >
+      {label}
+    </text>
+  ))}
+  
+  {parsedDatasets.map((dataset: any, idx: number) => (
+    <g key={`legend-${idx}`}>
+      <rect
+        x={chartWidth - padding.right + 20}
+        y={padding.top + idx * 25}
+        width="12"
+        height="12"
+        fill={colors[dataset.backgroundColor] || dataset.backgroundColor}
+      />
+      <text
+        x={chartWidth - padding.right + 40}
+        y={padding.top + idx * 25 + 10}
+        font-size="12"
+        fill="currentColor"
+      >
+        {dataset.label}
+      </text>
+    </g>
+  ))}
+</svg>

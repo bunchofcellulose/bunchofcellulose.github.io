@@ -1,0 +1,129 @@
+---
+import "../styles/global.css";
+import TopNav from "../components/TopNav.astro";
+import FabFlower from "../components/FabFlower.astro";
+import { ClientRouter } from "astro:transitions";
+import { siteConfig } from "../config";
+
+interface Props {
+  title?: string;
+  description?: string;
+  currentPage?: "home" | "blog" | "projects" | "honors";
+}
+
+const {
+  title = "Portfolio",
+  description = "A modern portfolio template built with Astro and DaisyUI",
+  currentPage = "home",
+} = Astro.props;
+
+// Custom blur-fade animation configuration
+const blurFadeAnimation = {
+  old: {
+    name: "blurFadeOut",
+    duration: "0.3s",
+    easing: "ease-in-out",
+    fillMode: "forwards",
+  },
+  new: {
+    name: "blurFadeIn",
+    duration: "0.3s",
+    easing: "ease-in-out",
+    fillMode: "backwards",
+  },
+};
+
+const pageTransition = {
+  forwards: blurFadeAnimation,
+  backwards: blurFadeAnimation,
+};
+
+const origin = Astro.url.origin;
+---
+
+<!doctype html>
+<html lang="en" transition:animate={pageTransition}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- View Transitions -->
+    <ClientRouter />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={origin} />
+    <meta property="og:image" content={`${origin}/images/og_home.png`} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${origin}/images/og_home.png`} />
+  </head>
+  <body class="min-h-screen">
+    <!-- Top Navigation - Fixed Position -->
+    <TopNav currentPage={currentPage} />
+
+    <slot />
+
+    {
+      siteConfig.extraLinks.enable && (
+        <FabFlower extraLinks={siteConfig.extraLinks} />
+      )
+    }
+
+    <!-- Smooth Scroll -->
+    <style is:global>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Initial Page Load Blur-Fade Animation */
+      @keyframes pageLoadBlurFade {
+        0% {
+          opacity: 0;
+          filter: blur(8px);
+        }
+        100% {
+          opacity: 1;
+          filter: blur(0px);
+        }
+      }
+
+      html {
+        animation: pageLoadBlurFade 0.3s ease-in-out;
+        animation-fill-mode: both;
+      }
+
+      /* Blur Fade View Transitions (for page-to-page navigation) */
+      @keyframes blurFadeIn {
+        0% {
+          opacity: 0;
+          filter: blur(10px);
+        }
+        100% {
+          opacity: 1;
+          filter: blur(0px);
+        }
+      }
+
+      @keyframes blurFadeOut {
+        0% {
+          opacity: 1;
+          filter: blur(0px);
+        }
+        100% {
+          opacity: 0;
+          filter: blur(10px);
+        }
+      }
+    </style>
+  </body>
+</html>

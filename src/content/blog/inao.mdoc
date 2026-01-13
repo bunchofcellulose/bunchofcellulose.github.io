@@ -1,0 +1,43 @@
+---
+title: INAO Analysis
+description: Analysis of Indian National Astronomy Olympiad (INAO) papers from 2014 to 2025.
+updatedDate: 2026-01-13
+publishDate: 2026-01-13
+image: '../../assets/blog/inao/image.png'
+tags:
+    - astronomy
+    - olympiad
+---
+
+## Topic Distribution by Year
+
+The stacked bar chart below shows how different topics have been weighted in INAO exams over the past 12 years:
+
+{% Chart 
+  type="bar"
+  title="Topic Distribution in INAO (2014-2025)"
+  labels="[\"2014\", \"2015\", \"2016\", \"2017\", \"2018\", \"2019\", \"2020\", \"2021\", \"2022\", \"2023\", \"2024\", \"2025\"]"
+  datasets="[{\"label\": \"Physics, Math and Logic\", \"data\": [8, 29, 60, 38, 30, 30, 20, 6, 25, 15, 25, 15], \"backgroundColor\": \"#C9CBCF\", \"borderColor\": \"#000000\", \"borderWidth\": 1}, {\"label\": \"Sky\", \"data\": [15, 10, 9, 15, 3, 50, 20, 0, 30, 39, 16, 5], \"backgroundColor\": \"#FF9F40\", \"borderColor\": \"#000000\", \"borderWidth\": 1}, {\"label\": \"Coordinates and Time\", \"data\": [14, 0, 10, 7, 29, 0, 27, 18, 0, 0, 16, 0], \"backgroundColor\": \"#9966FF\", \"borderColor\": \"#000000\", \"borderWidth\": 1}, {\"label\": \"Optics and Instruments\", \"data\": [15, 6, 6, 20, 11, 20, 0, 12, 15, 10, 11, 10], \"backgroundColor\": \"#4BC0C0\", \"borderColor\": \"#000000\", \"borderWidth\": 1}, {\"label\": \"Radiation\", \"data\": [0, 0, 15, 20, 9, 0, 18, 0, 0, 16, 6, 12], \"backgroundColor\": \"#FFCE56\", \"borderColor\": \"#000000\", \"borderWidth\": 1}, {\"label\": \"Celestial Mechanics\", \"data\": [36, 40, 0, 0, 18, 0, 15, 44, 20, 20, 26, 58], \"backgroundColor\": \"#36A2EB\", \"borderColor\": \"#000000\", \"borderWidth\": 1}, {\"label\": \"Misc (Astronomy)\", \"data\": [12, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], \"backgroundColor\": \"#FF6384\", \"borderColor\": \"#000000\", \"borderWidth\": 1}]"
+  height="400"
+/%}
+
+## Average Marks by Topic
+
+The chart below shows the average marks scored across all years for each topic:
+
+{% Chart 
+  type="bar"
+  title="Average Marks by Topic"
+  labels="[\"Physics, Math and Logic\", \"Sky\", \"Coordinates and Time\", \"Optics and Instruments\", \"Radiation\", \"Celestial Mechanics\", \"Misc (Astronomy)\"]"
+  datasets="[{\"label\": \"Average Marks\", \"data\": [25.08, 17.67, 10.08, 11.33, 8.00, 23.08, 2.25], \"backgroundColor\": [\"#C9CBCF\", \"#FF9F40\", \"#9966FF\", \"#4BC0C0\", \"#FFCE56\", \"#36A2EB\", \"#FF6384\"], \"borderColor\": \"#000000\", \"borderWidth\": 1}]"
+  height="400"
+  legend="false"
+/%}
+
+## Key Insights
+
+Based on the analysis of 12 years of INAO exams:
+
+- **Most Covered Topic**: Questions solvable without astronomy knowledge (physics, math or logic based) account for 25.1% of total marks
+- **Second Most Covered**: Celestial Mechanics at 23.1% of total marks
+- **Third Most Covered**: Sky knowledge (Moon, Sun and constellations) at 17.7% of total marks
