@@ -28,11 +28,13 @@ jobs:
             - name: Build
               run: npm run build
 
+            # Uploads ./dist for GitHub Pages usage later
             - name: Upload artifact for Pages
               uses: actions/upload-pages-artifact@v3
               with:
                   path: ./dist
 
+            # Deploys directly to Vercel
             - name: Deploy to Vercel
               env:
                   VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
@@ -44,12 +46,12 @@ jobs:
         needs: build
         runs-on: ubuntu-latest
         
-        # Add this environment block
+        # FIX: Links this job to the correct environment in Repo Settings
         environment:
-          name: github-pages
-          url: ${{ steps.deployment.outputs.page_url }}
-          
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
         steps:
             - name: Deploy to GitHub Pages
-              id: deployment  # Add an ID to reference the URL output
+              id: deployment
               uses: actions/deploy-pages@v3
