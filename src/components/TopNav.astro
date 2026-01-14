@@ -1,23 +1,33 @@
 ---
-import { BookOpen, FolderCode, Home, Award } from "@lucide/astro";
+import { BookOpen, FolderCode, Home, Award, Link2, Lightbulb } from "@lucide/astro";
 import ThemeToggle from "./ThemeToggle.astro";
 import ThemeSelector from "./ThemeSelector.astro";
 import { siteConfig } from "../config";
 
 interface Props {
-  currentPage?: "home" | "blog" | "projects" | "honors";
+  currentPage?: "home" | "blog" | "projects" | "honors" | "links";
 }
 
 const { currentPage = "home" } = Astro.props;
 ---
 
-<div class="fixed top-4 left-4 z-50">
+<div class="fixed top-4 left-4 z-50 flex items-center gap-2">
   <!-- Home Button -->
   <a
     href="/"
     class={`btn btn-sm gap-0 ${currentPage === "home" ? "btn-primary" : "btn-ghost"}`}
   >
     <Home class="size-4" />
+  </a>
+  <!-- Wikipedia Random Button -->
+  <a
+    href="https://en.wikipedia.org/wiki/Special:Random"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn-sm gap-0 btn-ghost"
+    title="Random Wikipedia article"
+  >
+    <Lightbulb class="size-4" />
   </a>
 </div>
 
@@ -43,6 +53,13 @@ const { currentPage = "home" } = Astro.props;
   >
     <Award class="size-4" />
     <span class="hidden sm:inline">Honors</span>
+  </a>
+  <a
+    href="/links"
+    class={`btn btn-sm gap-1 ${currentPage === "links" ? "btn-primary" : "btn-ghost"}`}
+  >
+    <Link2 class="size-4" />
+    <span class="hidden sm:inline">Links</span>
   </a>
 
   <!-- Theme Toggle -->

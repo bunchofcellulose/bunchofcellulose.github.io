@@ -8,13 +8,15 @@ import { siteConfig } from "../config";
 interface Props {
   title?: string;
   description?: string;
-  currentPage?: "home" | "blog" | "projects" | "honors";
+  currentPage?: "home" | "blog" | "projects" | "honors" | "links";
+  image?: string;
 }
 
 const {
   title = "Portfolio",
   description = "A modern portfolio template built with Astro and DaisyUI",
   currentPage = "home",
+  image,
 } = Astro.props;
 
 // Custom blur-fade animation configuration
@@ -59,13 +61,13 @@ const origin = Astro.url.origin;
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={origin} />
-    <meta property="og:image" content={`${origin}/images/og_home.png`} />
+    {image && <meta property="og:image" content={`${origin}${image}`} />}
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`${origin}/images/og_home.png`} />
+    {image && <meta name="twitter:image" content={`${origin}${image}`} />}
   </head>
   <body class="min-h-screen">
     <!-- Top Navigation - Fixed Position -->

@@ -1,0 +1,457 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { PenTool, Calculator, Image, User, Star, Languages, FlaskConical, Brain, Cpu } from "@lucide/astro";
+---
+
+<Layout
+  title="Links"
+  description="Useful links and resources"
+  currentPage="links"
+>
+  <main class="max-w-6xl mx-auto px-4 py-20">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h1 class="text-5xl font-bold mb-4">Links</h1>
+      <p class="text-xl text-base-content/70">
+        Useful links and resources
+      </p>
+    </div>
+
+    <!-- Back to Home -->
+    <div class="mb-8">
+      <a href="/" class="btn btn-ghost btn-sm">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+        Back to Home
+      </a>
+    </div>
+
+    <!-- Content -->
+    <div class="space-y-12">
+      <!-- STEM Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-bold">STEM</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- IOAA Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <Star class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">International Olympiad on Astronomy and Astrophysics</h3>
+                <p class="text-sm text-base-content/60">IOAA - Astronomy competition</p>
+              </div>
+            </div>
+            <a
+              href="https://ioaastrophysics.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- LingHacks Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <Languages class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">LingHacks</h3>
+                <p class="text-sm text-base-content/60">Computational linguistics & NLP</p>
+              </div>
+            </div>
+            <a
+              href="https://www.linghacks.tech/home"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- IOL Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <Languages class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">International Linguistics Olympiad</h3>
+                <p class="text-sm text-base-content/60">IOL 2026 - Linguistics competition</p>
+              </div>
+            </div>
+            <a
+              href="https://iol2026.ioling.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- PROMYS India Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <Calculator class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">PROMYS India</h3>
+                <p class="text-sm text-base-content/60">Math summer program for high school</p>
+              </div>
+            </div>
+            <a
+              href="https://promys-india.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- STEMS Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <FlaskConical class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">STEMS</h3>
+                <p class="text-sm text-base-content/60">Scholastic Test of Excellence in Mathematical Sciences</p>
+              </div>
+            </div>
+            <a
+              href="https://tessellate.cmi.ac.in/stems/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- ESPR Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <Brain class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">European Summer Program in Rationality</h3>
+                <p class="text-sm text-base-content/60">ESPR - Math & reasoning workshop</p>
+              </div>
+            </div>
+            <a
+              href="https://espr.camp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- PAIR Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <Cpu class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Program on AI and Reasoning</h3>
+                <p class="text-sm text-base-content/60">PAIR - AI & cognition workshop</p>
+              </div>
+            </div>
+            <a
+              href="https://pair.camp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- RSI India Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <FlaskConical class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Research Science Initiative India</h3>
+                <p class="text-sm text-base-content/60">RSI India - Intensive STEM research program</p>
+              </div>
+            </div>
+            <a
+              href="http://cee.org/RSI_India"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tools Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-bold">Tools</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Excalidraw Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <PenTool class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Excalidraw</h3>
+                <p class="text-sm text-base-content/60">Virtual whiteboard for diagrams</p>
+              </div>
+            </div>
+            <a
+              href="https://excalidraw.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- Integral Calculator Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <Calculator class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Integral Calculator</h3>
+                <p class="text-sm text-base-content/60">Solve integrals step by step</p>
+              </div>
+            </div>
+            <a
+              href="https://www.integral-calculator.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- Pixlr Express Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <Image class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Pixlr Express</h3>
+                <p class="text-sm text-base-content/60">Online image editor and design tool</p>
+              </div>
+            </div>
+            <a
+              href="https://pixlr.com/express/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cool People Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-bold">Cool People</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Matías Páez Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <User class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Matías Páez</h3>
+                <p class="text-sm text-base-content/60">Physics olympiad enthusiast</p>
+              </div>
+            </div>
+            <a
+              href="https://matiasfpaez.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- Jason Zeng Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <User class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Jason Zeng</h3>
+                <p class="text-sm text-base-content/60">Competitive programmer & physicist</p>
+              </div>
+            </div>
+            <a
+              href="https://jasonzeng124.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- Richard Yang Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <User class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Richard Yang</h3>
+                <p class="text-sm text-base-content/60">Math, physics & CS enthusiast</p>
+              </div>
+            </div>
+            <a
+              href="https://riyang25.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- amatAf Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <User class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">amatAf</h3>
+                <p class="text-sm text-base-content/60">Amateur at a lot of things</p>
+              </div>
+            </div>
+            <a
+              href="https://amataf.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- Ashmit Dutta Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <User class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Ashmit Dutta</h3>
+                <p class="text-sm text-base-content/60">Software engineer & researcher</p>
+              </div>
+            </div>
+            <a
+              href="https://ashmitdutta.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- Samik Goyal Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <User class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Samik Goyal</h3>
+                <p class="text-sm text-base-content/60">IOI 2024 & 2025 Silver medallist</p>
+              </div>
+            </div>
+            <a
+              href="https://samikgoyal.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- Ryan Tang Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <User class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Ryan Tang</h3>
+                <p class="text-sm text-base-content/60">MIT student & astrophotographer</p>
+              </div>
+            </div>
+            <a
+              href="https://turtlely.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+
+          <!-- Avighna Card -->
+          <div class="bg-base-200 rounded-lg p-6 border border-base-300 hover:border-primary transition">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="bg-base-300 rounded-lg p-3">
+                <User class="size-6 text-primary" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Avighna</h3>
+                <p class="text-sm text-base-content/60">Competitive programmer & systems enthusiast</p>
+              </div>
+            </div>
+            <a
+              href="https://avighnac.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1"
+            >
+              Visit →
+            </a>
+          </div>
+        </div>
+      </section>
