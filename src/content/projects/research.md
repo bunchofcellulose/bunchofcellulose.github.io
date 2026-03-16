@@ -2,7 +2,7 @@
 title: Research & Proposals
 description: A collection of my scientific research papers and experimental proposals, including investigations into screened-gravity systems and particle straggling.
 image: ../../assets/projects/research/image.png
-startDate: '2025-01-01'
+startDate: '2024-11-01'
 skills:
   - Physics
   - Mathematical Modeling
