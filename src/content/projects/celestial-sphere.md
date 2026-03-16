@@ -18,8 +18,6 @@ sourceLink: https://github.com/bunchofcellulose/celestialsphere
 
 Celestial Sphere is an interactive web application that provides a neat and user-friendly interface for drawing and visualizing diagrams on a sphere. The tool is specifically designed to help students and educators easily learn and engage with spherical diagrams, which are commonly used in spherical astronomy, geometry, and coordinate systems.
 
-Rather than struggling with complex mathematical notation or static textbook diagrams, users can dynamically create, manipulate, and explore geometric shapes and astronomical concepts in real-time on an interactive 3D sphere.
-
 ## Core Features
 
 ### Interactive Point & Shape Management
@@ -74,11 +72,6 @@ Built with **Rust** and **Dioxus** compiled to WebAssembly for high performance:
 - **WebAssembly**: Runs efficiently in the browser without server requirements
 - **CSS**: Custom styling for intuitive UI
 
-### Language Distribution
-
-- **Rust 96.5%**: Core application logic and geometry computations
-- **CSS 3.5%**: User interface styling
-
 ## Use Cases
 
 ### For Students
@@ -97,37 +90,6 @@ Built with **Rust** and **Dioxus** compiled to WebAssembly for high performance:
 - Build custom problem sets
 - Show real-time geometric relationships
 
-### For Astronomers
-
-- Design celestial coordinate diagrams
-- Visualize observational geometry
-- Plan observations and field positions
-- Document astronomical concepts
-- Create publication-quality diagrams
-
-## Keyboard Shortcuts Reference
-
-| Shortcut | Action |
-| --- | --- |
-| Click | Add/Select point |
-| Shift+Click | Select multiple points |
-| Delete | Remove selected points |
-| Type | Name selected point |
-| Right-click | Draw/remove arc between points |
-| Scroll | Zoom in/out |
-| Middle-drag | Rotate sphere |
-| `/` | Place diametrically opposite point |
-| `.` | Draw great circle with pole |
-| Shift+`.` | Draw great circle through 2 points |
-| `,` | Draw small circle through 3 points |
-| Shift+`,` | Draw small circle with pole and point |
-| Shift+drag | Snap point to circle |
-| Ctrl+H | Hide/show point |
-| Ctrl+G | Group points |
-| Ctrl+U | Ungroup points |
-| Ctrl+A/S/D | Rotate sphere (x/y/z) |
-| Esc | Deselect all |
-
 ## Future Enhancements
 
 The project has several planned features:
@@ -138,19 +100,3 @@ The project has several planned features:
 - **Circle Intersections**: Snap to intersection points of circles
 - **Multiple Small Circles**: Create multiple small circles sharing a pole
 - **Advanced Snap Features**: Enhanced snapping for arcs and complex constructions
-
-## Building from Source
-
-The project is built with [Dioxus](https://dioxuslabs.com/learn/0.7/guides/deploy/) and can be built from source following the Dioxus deployment guides.
-
-## Impact & Community
-
-Celestial Sphere has become an essential tool in the astronomy education community, particularly for:
-
-- IOAA (International Olympiad on Astronomy and Astrophysics) preparation
-- University spherical astronomy courses
-- High school astronomy clubs
-- Astronomy Olympiad training programs
-- Research and visualization projects
-
-The application democratizes access to professional-quality spherical diagram tools, making them freely available to students and educators worldwide.

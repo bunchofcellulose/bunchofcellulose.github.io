@@ -24,7 +24,7 @@ The mission of OAC is to democratize astronomy education and foster a community 
 
 The OAC features an innovative two-round format that caters to different levels of competition:
 
-**Round 1: Open Round (September 21, 2025)**
+**Round 1: Open Round**
 
 - Open to all eligible students worldwide
 - Multiple-choice and short-answer questions
@@ -32,7 +32,7 @@ The OAC features an innovative two-round format that caters to different levels 
 - Accessible online format
 - Tests foundational knowledge and problem-solving skills
 
-**Round 2: Invitational Round (October 11-12, 2025)**
+**Round 2: Invitational Round**
 
 - Exclusively for top performers from the Open Round
 - Subjective, olympiad-style, open-ended problems
@@ -48,60 +48,6 @@ The competition features problems written by IOAA medalists and accomplished ast
 - **Diverse Topics**: Coverage across positional astronomy, photometry, celestial mechanics, astrophysics, and more
 - **Unique Elements**: Portions of the competition focus on practical application and research-oriented thinking
 - **International Standard**: Problems align with International Olympiad on Astronomy and Astrophysics standards
-
-## Eligibility & Registration
-
-### Who Can Participate
-
-- **Age Requirement**: 20 years old or younger on the date of the competition
-- **Education Status**: Should not have joined a university or equivalent institution before June 1, 2025
-- **Location**: Open to all eligible students worldwide
-- **Cost**: Completely free to enter
-
-### Registration Details
-
-- **Registration Deadline**: September 18, 2025
-- **Process**: Free and open online registration
-- **Accessibility**: Entirely online, participate from anywhere in the world
-
-## The Organizing Team
-
-The OAC is organized by accomplished young astronomers with extensive olympiad experience:
-
-**Akshat Srivastava** (🇮🇳 President & Co-Founder)
-
-- Member of the Indian team at IOAA 2025 (Gold Medalist)
-- Self-described "astronomy freak" and problem-writing specialist
-- Known for crafting challenging and thought-provoking questions
-
-**Aldric Benalan** (🇺🇸 Co-Founder)
-
-- Represented the U.S. at the 18th IOAA
-- Two-time USESO camp finalist
-- Brings diverse international perspective to competition design
-
-### Problem Writing Committee
-
-The competition problems are developed by an elite team of IOAA medalists:
-
-- **Taehun Jung** (🇰🇷) - IOAA 2025 Gold Medal
-- **Martin Kudrna** (🇨🇿) - IOAA 2025 Gold Medal, IOAA 2024 Silver Medal, IOAA 2023 Bronze Medal
-- **Aarush Mishra** (🇮🇳) - IOAA 2025 Gold Medal, IOAA Jr. 2023 Gold Medal
-- **Mahammad Jafarli** (🇦🇿) - IOAA 2025 Bronze Medal, IOAA 2024 Honourable Mention
-
-## Key Features
-
-### Completely Free & Accessible
-
-- No entry fees required
-- Available to all eligible high school students
-- 100% online platform - no travel or logistical barriers
-
-### Two-Tiered Competition Model
-
-- **Multiple-choice format** in Round 1 for broad accessibility
-- **Olympiad-style format** in Round 2 for deeper challenge
-- Allows students to progress based on merit
 
 ### Research & Practical Focus
 
